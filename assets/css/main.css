@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Ballet:opsz@16..72&display=swap');
+/**
+* Template Name: Lonely
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
-.ballet-kim {
-  font-family: "Ballet", cursive;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-
-
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -22,9 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #5a656e; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2c4964; /* Color for headings, subheadings and title throughout the website */
-  --accent-color-kim: #2972df;
-  --accent-color-kim-2: #2124e2;
-  --accent-color: #d43076; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #0c31a8; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -32,11 +30,11 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #5a656e;  /* The default color of the main navmenu links */
-  --nav-hover-color: #d43076; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #0c31a8; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #5a656e; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #d43076; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #0c31a8; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -93,7 +91,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
+  background: #0c31a8;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -445,7 +443,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--accent-color-kim);
+  background: var(--accent-color);
   color: var(--contrast-color);
   line-height: 1;
   margin: 0 4px;
@@ -457,7 +455,7 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  background: color-mix(in srgb, var(--accent-color-kim), transparent 20%);
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
   text-decoration: none;
 }
 
@@ -516,10 +514,10 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color-kim);
+  background-color: var(--accent-color);
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 4px;
   transition: all 0.4s;
 }
 
@@ -530,7 +528,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color-kim), transparent 20%);
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
   color: var(--contrast-color);
 }
 
@@ -553,8 +551,7 @@ h6 {
 --------------------------------------------------------------*/
 .page-title {
   color: var(--default-color);
-  background-color: var(--background-color-kim
-  );
+  background-color: var(--background-color);
   padding: 25px 0;
   position: relative;
 }
@@ -591,8 +588,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color-kim
-  );
+  background-color: var(--background-color);
   padding: 60px 0;
   scroll-margin-top: 90px;
   overflow: clip;
@@ -610,6 +606,7 @@ section,
 # Global Section Titles
 --------------------------------------------------------------*/
 .section-title {
+  text-align: center;
   padding-bottom: 60px;
   position: relative;
 }
@@ -623,12 +620,13 @@ section,
 }
 
 .section-title h2:after {
+  margin-inline: auto;
   content: "";
   position: absolute;
   display: block;
   width: 50px;
   height: 3px;
-  background: var(--accent-color-kim-2);
+  background: var(--accent-color);
   left: 0;
   right: 0;
   bottom: 0;
@@ -642,7 +640,7 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  background: url(../img/portfolio/main_lg.jpg) top center no-repeat;
+  background: url(../img/thumbnails/cegoh-skyscrapers-3184798_1920.jpg) top center no-repeat;
   background-size: cover;
   width: 100%;
   min-height: 90vh;
@@ -655,8 +653,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color-kim
-  ), transparent 90%);
+  background: color-mix(in srgb, var(--background-color), transparent 90%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -751,7 +748,7 @@ section,
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: var(--accent-color-kim-2);
+  color: var(--accent-color);
   line-height: 0;
 }
 
@@ -789,7 +786,7 @@ section,
   width: 1px;
   height: 10px;
   transition: 0.9s;
-  background-color: var(--accent-color-kim);
+  background-color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
@@ -806,7 +803,7 @@ section,
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid var(--accent-color-kim);
+  border-left: 2px solid var(--accent-color);
   position: relative;
 }
 
@@ -848,14 +845,14 @@ section,
   left: -9px;
   top: 0;
   background: var(--background-color);
-  border: 2px solid var(--accent-color-kim-2);
+  border: 2px solid var(--accent-color);
 }
 
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
-  background-color: var(--surface-color-kim-2);
+  background-color: var(--surface-color);
   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
   padding: 50px 30px;
   transition: all 0.3s ease-in-out;
@@ -924,11 +921,11 @@ section,
 }
 
 .portfolio .portfolio-filters li {
-  background-color: var(--surface-color-kim);
+  background-color: var(--surface-color);
   cursor: pointer;
   display: inline-block;
-  padding: 12px 25px 12px 25px;
-  margin: 0 10px;
+  padding: 8px 20px 10px 20px;
+  margin: 0 2px;
   font-size: 15px;
   font-weight: 500;
   line-height: 1;
@@ -940,7 +937,7 @@ section,
 .portfolio .portfolio-filters li:hover,
 .portfolio .portfolio-filters li.filter-active {
   color: var(--contrast-color);
-  background-color: var(--accent-color-kim);
+  background-color: var(--accent-color);
 }
 
 .portfolio .portfolio-filters li:first-child {
@@ -1098,7 +1095,7 @@ section,
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color-kim);
+  background-color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
@@ -1109,7 +1106,7 @@ section,
 }
 
 .contact .info-item i {
-  color: var(--accent-color-kims);
+  color: var(--accent-color);
   background: color-mix(in srgb, var(--accent-color), transparent 92%);
   font-size: 20px;
   width: 44px;
@@ -1152,7 +1149,7 @@ section,
   box-shadow: none;
   border-radius: 0;
   color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color-kim), transparent 50%);
+  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
@@ -1181,20 +1178,6 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
 
-
-.contact .php-email-form button[type=reset] {
-  color: var(--contrast-color);
-  background: var(--accent-color-kim);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=reset]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
-}
-
 /*--------------------------------------------------------------
 # Portfolio Details Section
 --------------------------------------------------------------*/
@@ -1215,11 +1198,11 @@ section,
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color-kim);
+  background-color: var(--accent-color);
 }
 
 .portfolio-details .portfolio-info {
-  background-color: var(--surface-color-kim);
+  background-color: var(--surface-color);
   padding: 30px;
   box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
 }
@@ -1328,4 +1311,174 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+/* Portfolio section background */
+#portfolio {
+  --background-color: #ffffff;
+  background-color: #ffffff;
+}
+
+/* Square portfolio thumbnails */
+#portfolio .portfolio-item > img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Rounded portfolio thumbnails */
+#portfolio .portfolio-item > img {
+  border-radius: 16px;
+}
+
+/* Align a single portfolio action with the details icon position */
+#portfolio .portfolio-info .preview-link:not(:has(~ .details-link)) {
+  right: 14px;
+}
+
+/* Fixed rounded frame, image zoom and dark hover overlay */
+#portfolio .portfolio-thumbnail {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 16px;
+}
+#portfolio .portfolio-thumbnail > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.4s ease;
+}
+#portfolio .portfolio-thumbnail::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+#portfolio .portfolio-item:hover .portfolio-thumbnail > img {
+  transform: scale(1.06);
+}
+#portfolio .portfolio-item:hover .portfolio-thumbnail::after {
+  opacity: 1;
+}
+@media (prefers-reduced-motion: reduce) {
+  #portfolio .portfolio-thumbnail > img,
+  #portfolio .portfolio-thumbnail::after {
+    transition: none;
+  }
+}
+
+/* Full image lightbox with vertical scrolling */
+.glightbox-container .gslide-inner-content:has(.gslide-image) {
+  max-height: calc(100vh - 80px);
+  max-height: calc(100dvh - 80px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+.glightbox-container .gslide-image {
+  display: block;
+  max-width: calc(100vw - 40px) !important;
+  max-height: none !important;
+  height: auto !important;
+}
+.glightbox-container .gslide-image img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  min-width: 0;
+  object-fit: contain;
+  touch-action: pan-y;
+}
+.glightbox-container .gslide-description {
+  display: none !important;
+}
+
+/* Hide popup scrollbar while keeping vertical scrolling */
+.glightbox-container .gslide-inner-content:has(.gslide-image) {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.glightbox-container .gslide-inner-content:has(.gslide-image)::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* Keep long popup images aligned to their top edge */
+.glightbox-container .gslide-inner-content:has(.gslide-image) {
+  align-items: flex-start;
+  overflow-anchor: none;
+  scroll-behavior: auto;
+}
+.glightbox-container .gslide-image img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Mobile popup: start at image top and center horizontally */
+@media (max-width: 768px) {
+  .glightbox-container .gslide-inner-content:has(.gslide-image) {
+    width: calc(100vw - 32px);
+    margin-inline: auto;
+    display: block;
+    max-height: calc(100vh - 80px);
+    max-height: calc(100dvh - 80px);
+  }
+  .glightbox-container .ginner-container:has(.gslide-image) {
+    height: auto !important;
+    min-height: 0;
+    width: 100% !important;
+    display: block;
+    margin: 0 auto;
+  }
+  .glightbox-container .gslide-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+  .glightbox-container .gslide-image img {
+    display: block;
+    max-width: 100% !important;
+    margin: 0 auto;
+  }
+}
+
+/* Popup images fill the available popup width */
+.glightbox-container .gslide-inner-content:has(.gslide-image) {
+  width: min(860px, calc(100vw - 40px));
+  margin-inline: auto;
+  display: block;
+}
+.glightbox-container .ginner-container:has(.gslide-image) {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+}
+.glightbox-container .gslide-image {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.glightbox-container .gslide-image img {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+}
+@media (max-width: 768px) {
+  .glightbox-container .gslide-inner-content:has(.gslide-image) {
+    width: calc(100vw - 32px);
+  }
+}
+
+#portfolio a.portfolio-thumbnail {
+  display: block;
 }
