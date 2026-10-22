@@ -1,4 +1,10 @@
-
+/**
+* Template Name: Lonely
+* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
 (function() {
   "use strict";
@@ -117,8 +123,23 @@
    * Initiate glightbox
    */
   const glightbox = GLightbox({
-    selector: '.glightbox'
+    selector: '.glightbox',
+    zoomable: false,
+    draggable: false,
+    touchNavigation: false
   });
+
+  // Always show the top of a popup image when opened or changed.
+  const resetPopupScroll = () => {
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.glightbox-container .gslide-inner-content').forEach(content => {
+        content.scrollTop = 0;
+      });
+    });
+  };
+  glightbox.on('open', resetPopupScroll);
+  glightbox.on('slide_changed', resetPopupScroll);
+  glightbox.on('slide_after_load', resetPopupScroll);
 
   /**
    * Init isotope layout and filters
