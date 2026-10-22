@@ -1454,7 +1454,7 @@ section,
 
 /* Popup images fill the available popup width */
 .glightbox-container .gslide-inner-content:has(.gslide-image) {
-  width: min(860px, calc(100vw - 40px));
+  width: min(1200px, calc(100vw - 40px));
   margin-inline: auto;
   display: block;
 }
