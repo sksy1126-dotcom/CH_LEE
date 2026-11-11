@@ -1,168 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Video Details - Lonely Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Lonely
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Details | Studio L.</title>
+<link href="assets/img/Favicon.jpg" rel="icon">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+<link href="assets/vendor/aos/aos.css" rel="stylesheet">
+<link href="assets/css/main.css" rel="stylesheet">
+<style>
+.video-player { width:100%; aspect-ratio:16/9; background:#080808; border-radius:12px; display:block; }
+.video-notice {font-size:.95rem;color:#555;margin-top:12px}
+.video-selector {display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.video-selector a {border:1px solid #d9dce1;padding:8px 12px;border-radius:8px;color:inherit;text-decoration:none}
+.video-selector a.active {background:#122b50;color:white;border-color:#122b50}
+</style>
 </head>
-
 <body class="portfolio-details-page">
-
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Lonely</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="index.html#hero">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-
-          <li><a href="index.html#portfolio">Portfolio</a></li>
-
-
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Page Title -->
-    <div class="page-title light-background">
-      <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Video Details</h1>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Video Details</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
-
-    <!-- Video Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <video class="w-100 rounded" controls playsinline preload="metadata" style="aspect-ratio: 16 / 9; background: #000;">
-              <!-- Replace this file with your MP4 video. -->
-              <source src="assets/video/video-sample.mp4" type="video/mp4">
-              Your browser does not support video playback.
-            </video>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Video</li>
-                <li><strong>Client</strong>: ASU Company</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Video Project</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Video Project non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section><!-- /Video Details Section -->
-
-  </main>
-
-  <footer id="footer" class="footer light-background">
-    <div class="container">
-      <h3 class="sitename">Lonely</h3>
-      <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
-      <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-skype"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
-      </div>
-      <div class="container">
-        <div class="copyright">
-          <span>Copyright</span> <strong class="px-1 sitename">Lonely</strong> <span>All Rights Reserved</span>
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+<header id="header" class="header d-flex align-items-center sticky-top">
+ <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Studio L.</h1></a>
+  <nav id="navmenu" class="navmenu"><ul><li><a href="index.html#hero">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#portfolio">Portfolio</a></li></ul><i class="mobile-nav-toggle d-xl-none bi bi-list"></i></nav>
+ </div>
+</header>
+<main class="main">
+<div class="page-title light-background"><div class="container d-lg-flex justify-content-between align-items-center"><h1 class="mb-2 mb-lg-0">Video Details</h1><nav class="breadcrumbs"><ol><li><a href="index.html">Home</a></li><li><a href="index.html#portfolio">Portfolio</a></li><li class="current">Video</li></ol></nav></div></div>
+<section id="portfolio-details" class="portfolio-details section"><div class="container" data-aos="fade-up" data-aos-delay="100"><div class="row gy-4">
+<div class="col-lg-8"><video id="project-video" class="video-player" controls playsinline preload="metadata"><source id="video-source" src="" type="video/mp4">이 브라우저는 동영상 재생을 지원하지 않습니다.</video><p class="video-notice" id="video-notice">영상 파일은 assets/video 폴더에 넣어주세요.</p><div class="video-selector" id="video-selector" aria-label="영상 선택"></div></div>
+<div class="col-lg-4"><div class="portfolio-info"><h3>Project Information</h3><ul><li><strong>Category</strong>: Video</li><li><strong>Project</strong>: <span id="project-label"></span></li><li><strong>File</strong>: <span id="project-file"></span></li></ul></div><div class="portfolio-description"><h2 id="project-heading"></h2><p>영상 포트폴리오 프로젝트입니다.</p><a href="index.html#portfolio">← Portfolio로 돌아가기</a></div></div>
+</div></div></section>
+</main>
+<footer id="footer" class="footer light-background"><div class="container text-center"><h3 class="sitename">Studio L.</h3><p>Design · Figma · Motion</p></div></footer>
+<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<script>
+const projects = [
+  {id:"01", title:"Coffee", file:"Thumb_V01.coffee.mp4"},
+  {id:"02", title:"Food", file:"Thumb_V02.food.mp4"},
+  {id:"03", title:"Resort", file:"Thumb_V03.resort.mp4"},
+  {id:"04", title:"Place", file:"Thumb_V04.place.mp4"},
+  {id:"05", title:"Airplane", file:"Thumb_V05.airplane.mp4"},
+  {id:"06", title:"Shorts 01", file:"Thumb_V06.Shorts.mp4"},
+  {id:"07", title:"Shorts 02", file:"Thumb_V07.Shorts.mp4"}
+];
+const params = new URLSearchParams(location.search);
+const selected = projects.find(p => p.id === params.get('video')) || projects[0];
+const video = document.getElementById('project-video');
+const src = 'assets/video/' + selected.file;
+document.getElementById('video-source').src = src;
+video.poster = 'assets/img/thumbnails/Thumb_V' + selected.id + '.jpg';
+video.load();
+document.getElementById('project-label').textContent = selected.title;
+document.getElementById('project-file').textContent = selected.file;
+document.getElementById('project-heading').textContent = 'Video ' + selected.id + ' · ' + selected.title;
+document.title = 'Video ' + selected.id + ' | Studio L.';
+document.getElementById('video-selector').innerHTML = projects.map(p => '<a '+(p.id===selected.id?'class="active" ':'')+'href="video-details.html?video='+p.id+'">Video '+p.id+'</a>').join('');
+video.addEventListener('error', () => {document.getElementById('video-notice').textContent = '영상 파일을 불러올 수 없습니다. assets/video/' + selected.file + ' 경로와 파일명을 확인하세요.';});
+</script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/js/main.js"></script>
+</body></html>
