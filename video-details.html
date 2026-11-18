@@ -19,7 +19,7 @@
 <body class="portfolio-details-page">
 <header id="header" class="header d-flex align-items-center sticky-top">
  <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-  <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">Studio L.</h1></a>
+  <a href="index.html" class="logo d-flex align-items-center"><h1 class="sitename">MULTI : FORM</h1></a>
   <nav id="navmenu" class="navmenu"><ul><li><a href="index.html#hero">Home</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#portfolio">Portfolio</a></li></ul><i class="mobile-nav-toggle d-xl-none bi bi-list"></i></nav>
  </div>
 </header>
@@ -30,7 +30,7 @@
 <div class="col-lg-4"><div class="portfolio-info"><h3>Project Information</h3><ul><li><strong>Category</strong>: Video</li><li><strong>Project</strong>: <span id="project-label"></span></li><li><strong>File</strong>: <span id="project-file"></span></li></ul></div><div class="portfolio-description"><h2 id="project-heading"></h2><p>영상 포트폴리오 프로젝트입니다.</p><a href="index.html#portfolio">← Portfolio로 돌아가기</a></div></div>
 </div></div></section>
 </main>
-<footer id="footer" class="footer light-background"><div class="container text-center"><h3 class="sitename">Studio L.</h3><p>Design · Figma · Motion</p></div></footer>
+<footer id="footer" class="footer light-background"><div class="container text-center"><h3 class="sitename">MULTI : FORM</h3><p>Design · Figma · Motion</p></div></footer>
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 <script>
 const projects = [
@@ -54,7 +54,7 @@ video.load();
 document.getElementById('project-label').textContent = selected.title;
 document.getElementById('project-file').textContent = selected.file;
 document.getElementById('project-heading').textContent = 'Video ' + selected.id + ' · ' + selected.title;
-document.title = 'Video ' + selected.id + ' | Studio L.';
+document.title = 'Video ' + selected.id + ' | MULTI : FORM';
 document.getElementById('video-selector').innerHTML = projects.map(p => '<a '+(p.id===selected.id?'class="active" ':'')+'href="video-details.html?video='+p.id+'">Video '+p.id+'</a>').join('');
 video.addEventListener('error', () => {document.getElementById('video-notice').textContent = '영상 파일을 불러올 수 없습니다. assets/video/' + selected.file + ' 경로와 파일명을 확인하세요.';});
 </script>
